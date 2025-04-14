@@ -9,3 +9,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('test_api', [Belajar::class, 'coba']);
+Route::post('cek_hari', [Belajar::class, 'cek_tgl']);
+Route::get('set_rahasia/{jenis}/{teks}', [Belajar::class, 'enkripsi_deskripsi']);
